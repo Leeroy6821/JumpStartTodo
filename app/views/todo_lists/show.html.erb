@@ -1,0 +1,18 @@
+<div class="page-header">
+  <%= link_to todo_lists_path, class: 'btn btn-default' do %>
+    All Todo_lists
+  <% end %>
+  <%= link_to edit_todo_list_path(@todo_list), class: 'btn btn-primary' do %>
+    Edit
+  <% end %>
+  <h1>Show todo_list</h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>Title:</dt>
+  <dd><%= @todo_list.title %></dd>
+
+  <dt>Description:</dt>
+  <dd><%= @todo_list.description %></dd>
+
+</dl>
